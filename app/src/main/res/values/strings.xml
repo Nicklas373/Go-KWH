@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Go KWH</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Go KWH</string>
+    <string name="nav_header_subtitle">Mari Berwirausaha</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_1_id">Memajukan Perekonomian</string>
+    <string name="menu_2_id">Dengan Berwirausaha</string>
+    <string name="menu_3_id">Go KWH</string>
+    <string name="menu_logo_id">Go KWH Logo</string>
+    <string name="menu_logo2_id">Kuliner Logo</string>
+    <string name="menu_logo3_id">Elektronik Logo</string>
+    <string name="menu_logo4_id">Fashion Logo</string>
+    <string name="menu_4_id">Selamat Datang Di Menu Pengisian Formulir Usaha Kuliner</string>
+    <string name="menu_5_id">Selamat Datang Di Menu Pengisian Formulir Usaha Elektronik</string>
+    <string name="menu_6_id">Selamat Datang Di Menu Pengisian Formulir Usaha Fashion</string>
+    <string name="menu_form_1_id">Form Pengajuan Proposal Kuliner</string>
+    <string name="menu_form_2_id">Form Pengajuan Proposal Elektronik</string>
+    <string name="menu_form_3_id">Form Pengajuan Proposal Fashion</string>
+    <string name="menu_form_nama_id">Nama:</string>
+    <string name="menu_form_nama_hint_id">Masukkan Nama Anda</string>
+    <string name="menu_form_alamat_id">Alamat:</string>
+    <string name="menu_form_alamat_hint_id">Masukkan Alamat Usaha</string>
+    <string name="menu_form_email_id">E-Mail:</string>
+    <string name="menu_form_email_hint_id">Masukkan Alamat E-Mail Anda</string>
+    <string name="menu_form_telp_id">No. HP / Telepon:</string>
+    <string name="menu_form_telp_hint_id">Masukkan No. HP / Telepon</string>
+    <string name="menu_form_deskripsi_id">Deskripsi Usaha:</string>
+    <string name="menu_form_deskripsi_hint_id">Masukkan Deskripsi Usaha Anda</string>
+    <string name="menu_form_barang_id">Jenis Barang Yang Dijual:</string>
+    <string name="menu_form_barang_hint_id">Kulkas,AC,TV,Mesin Cuci</string>
+    <string name="menu_form_barang_hint_2_id">Jeans, Kemeja, Kaos, Jaket</string>
+    <string name="button_1_id">Selanjutnya</string>
+    <string name="button_2_id">Simpan</string>
+    <string name="kuliner_1_id">Nama: </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
