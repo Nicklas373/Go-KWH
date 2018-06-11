@@ -1,12 +1,12 @@
-package com.gabut.kwh;
+package com.gokwh.anastasia.gokwh;
 
-import android.content.Context;
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
@@ -15,12 +15,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-
-import java.net.Authenticator;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -44,7 +42,6 @@ public class MainActivity extends AppCompatActivity
 
         //add this line to display menu1 when the activity is loaded
         displaySelectedScreen(R.id.nav_menu1);
-
     }
 
     @Override
@@ -60,13 +57,26 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.email, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.mail) {
+            Toast.makeText(MainActivity.this, "Mengirim Email", Toast.LENGTH_SHORT).show();
+            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(    "mailto", "mrifkiirvandi@gmail.com", null));   emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Dukungan Aplikasi GO KWH");  emailIntent.putExtra(Intent.EXTRA_TEXT, "E-Mail Dikirim Melalui Aplikasi");  startActivity(Intent.createChooser(emailIntent, "Go KWH Mail Service"));
+        } else if (item.getItemId() == R.id.kontributor) {
+            Toast.makeText(MainActivity.this, "Daftar Kontributor", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, kontributor.class));
+        }
         return true;
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@Nullable  MenuItem item) {
 
         //calling the method displayselectedscreen and passing the id of selected menu
         displaySelectedScreen(item.getItemId());

@@ -2,6 +2,7 @@
     <string name="app_name">Go KWH</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
     <string name="nav_header_title">Go KWH</string>
     <string name="nav_header_subtitle">Mari Berwirausaha</string>
     <string name="nav_header_desc">Navigation header</string>
@@ -34,7 +35,21 @@
     <string name="button_1_id">Selanjutnya</string>
     <string name="button_2_id">Simpan</string>
     <string name="kuliner_1_id">Nama: </string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tentang_1_id">GoKWH merupakan sebuah inovasi untuk membantu para pemula yang ingin memulai suatu usaha, GoKWH memberikan anda akses untuk membuat sebuah proposal berupa dokumen. Bergabung dengan kami untuk memulai bisnis anda.</string>
+    <string name="tentang_web_id">Kunjungi Kami di :</string>
+    <string name="link_id">Go KWH Website</string>
+    <string name="title_activity_welcome">Beranda</string>
+    <string name="next">Selanjutnya</string>
+    <string name="skip">Lewati</string>
+    <string name="start">Mulai</string>
+    <string name="slide_1_title">Kuliner</string>
+    <string name="slide_1_desc">Mulai Usaha Anda Dengan Berwirausaha</string>
+    <string name="slide_2_title">Elektronik </string>
+    <string name="slide_2_desc">Kami Membantu Anda Dengan Menyediakan Beberapa Proposal</string>
+    <string name="slide_3_title">Fashion</string>
+    <string name="slide_3_desc">Go KWH Mari Berwirausaha</string>
+    <string name="anggota_id">ID : </string>
+    <string name="anggota_nama">Nama : </string>
+    <string name="anggota_jabatan">Jabatan : </string>
+    <string name="anggota_email">E-Mail : </string>
 </resources>

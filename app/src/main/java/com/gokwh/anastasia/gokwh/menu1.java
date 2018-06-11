@@ -1,4 +1,4 @@
-package com.gabut.kwh;
+package com.gokwh.anastasia.gokwh;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,20 +7,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class menu5 extends Fragment {
+public class menu1 extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@Nullable  LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //returning our layout file
         //change R.layout.yourlayoutfilename for each of your fragments
-        return inflater.inflate(R.layout.fragment_menu_5, container, false);
+        return inflater.inflate(R.layout.fragment_menu_1, container, false);
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@Nullable View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
-        getActivity().setTitle("Tentang Aplikasi");
+        getActivity().setTitle("Go KWH");
     }
 }

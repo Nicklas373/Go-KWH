@@ -11,6 +11,7 @@
         android:layout_alignParentTop="true"
         android:text="@string/menu_6_id"
         android:textAlignment="center"
+        android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView
@@ -31,6 +32,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="41dp"
         android:onClick="Next"
-        android:text="@string/button_1_id" />
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/button_1_id"
+        android:theme="@style/Button2Style"
+        android:textColor="#FFFFFF"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
 </RelativeLayout>

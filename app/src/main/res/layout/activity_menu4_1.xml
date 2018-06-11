@@ -1,177 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu4_1">
+    android:background="@color/bg_slider_screen3">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <LinearLayout
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_form_3_id"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:layout_gravity="center" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="@string/menu_form_nama_id"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_form_3_id"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:layout_gravity="center" />
 
-    <EditText
-        android:id="@+id/input_nama"
-        android:layout_width="402dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/menu_form_nama_hint_id"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/menu_form_nama_id"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="@string/menu_form_alamat_id"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
+                <EditText
+                    android:id="@+id/input_nama"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/menu_form_nama_hint_id"
+                    android:inputType="text"/>
 
-    <EditText
-        android:id="@+id/input_alamat"
-        android:layout_width="402dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/menu_form_alamat_hint_id"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/menu_form_alamat_id"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="@string/menu_form_email_id"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
+                <EditText
+                    android:id="@+id/input_alamat"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/menu_form_alamat_hint_id"
+                    android:inputType="text"/>
 
-    <EditText
-        android:id="@+id/input_email"
-        android:layout_width="402dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/menu_form_email_hint_id"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/menu_form_email_id"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="@string/menu_form_telp_id"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/menu_form_email_hint_id"
+                    android:inputType="textEmailAddress"/>
 
-    <EditText
-        android:id="@+id/input_hp"
-        android:layout_width="452dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/menu_form_telp_hint_id"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/menu_form_telp_id"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_form_barang_id"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.600" />
+                <EditText
+                    android:id="@+id/input_hp"
+                    android:layout_width="452dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/menu_form_telp_hint_id"
+                    android:inputType="number"/>
 
-    <EditText
-        android:id="@+id/input_usaha"
-        android:layout_width="392dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/menu_form_barang_hint_2_id"
-        android:inputType="textLongMessage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_form_barang_id"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_form_deskripsi_id"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735" />
+                <EditText
+                    android:id="@+id/input_usaha"
+                    android:layout_width="392dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/menu_form_barang_hint_2_id"
+                    android:inputType="textLongMessage" />
 
-    <EditText
-        android:id="@+id/input_des"
-        android:layout_width="392dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/menu_form_deskripsi_hint_id"
-        android:inputType="textLongMessage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_form_deskripsi_id"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/simpan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:text="@string/button_2_id"
-        android:layout_gravity="center" />
-    </LinearLayout>
-    </ScrollView>
+                <EditText
+                    android:id="@+id/input_des"
+                    android:layout_width="392dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/menu_form_deskripsi_hint_id"
+                    android:inputType="textLongMessage" />
+
+                <Button
+                    android:id="@+id/simpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/button_2_id"
+                    android:layout_gravity="center"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:theme="@style/Button2Style"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/bg_slider_screen3"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
 </android.support.constraint.ConstraintLayout>

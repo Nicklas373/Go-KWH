@@ -1,4 +1,4 @@
-package com.gabut.kwh;
+package com.gokwh.anastasia.gokwh;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.gabut.kwh", appContext.getPackageName());
+        assertEquals("com.gokwh.anastasia.gokwh", appContext.getPackageName());
     }
 }

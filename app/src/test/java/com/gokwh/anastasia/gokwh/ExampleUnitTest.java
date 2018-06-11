@@ -1,4 +1,4 @@
-package com.gabut.kwh;
+package com.gokwh.anastasia.gokwh;
 
 import org.junit.Test;
 

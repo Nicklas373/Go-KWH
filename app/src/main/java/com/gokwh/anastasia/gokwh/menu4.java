@@ -1,4 +1,4 @@
-package com.gabut.kwh;
+package com.gokwh.anastasia.gokwh;
 
 import android.content.Intent;
 import android.os.Bundle;
