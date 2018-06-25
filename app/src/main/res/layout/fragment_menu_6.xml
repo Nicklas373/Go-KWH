@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:text="@string/fragment_6_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:layout_width="259dp"
+        android:layout_height="230dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/menu_logo_id"
+        android:src="@drawable/go_kwh" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="176dp"
+        android:text="@string/fragment_6_list"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/kuliner_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="93dp"
+        android:layout_toStartOf="@+id/textView3"
+        android:onClick="kuliner"
+        android:text="@string/fragment_kuliner"
+        android:textColor="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:theme="@style/Button2Style" />
+
+    <Button
+        android:id="@+id/elektronik_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kuliner_bt"
+        android:layout_centerHorizontal="true"
+        android:onClick="elektronik"
+        android:text="@string/fragment_elektronik"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#FFFFFF"
+        android:theme="@style/Button2Style" />
+
+    <Button
+        android:id="@+id/fashion_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kuliner_bt"
+        android:layout_toEndOf="@+id/textView3"
+        android:onClick="fashion"
+        android:text="@string/fragment_fashion"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#FFFFFF"
+        android:theme="@style/Button2Style" />
+
+</RelativeLayout>
